@@ -1,8 +1,10 @@
-#include <stdio.h>
+#include <stdio.h> //#include inclui a biblioteca padrão de entrada e saída, necessária para usar a função printf.
 
-int main(){
+int main(){ // int main() é onde o programa começa a execução. Toda aplicação em C começa pela função main.
 
-int carta = '1,2';
+//VARIAVEIS
+
+int carta = '1,2'; 
 char estado = 'T,B';
 char codigo [28] = "T01" "B02";
 char cidade [28] = "tocantins" "bahia";
@@ -12,8 +14,8 @@ float pib = '427.00, 628.08' ;
 int numero = '42, 72';
 
 
-printf("Carta: \n");
-scanf(" %d", &carta);
+printf("Carta: \n"); // printf; imprime a mensagem  na tela. O \n adiciona uma nova linha ao final da mensagem.
+scanf(" %d", &carta); // scanf é usada para ler dados do usuário, que são então armazenados em variáveis.
 
 printf("Estado: \n");
 scanf(" %c", &estado);
@@ -39,6 +41,6 @@ scanf(" %d", &numero);
 printf("Carta: %d\n Estado: %c\n Código: %s\n Nome da Cidade: %s\n População: %d\n", carta, estado, codigo, cidade, populacao);
 printf("Área: %.2f km²\n PIB: %.3f bilhoes de reais\n Número de Pontos Turísticos: %d\n", area, pib, numero);
 
-return 0;
+return 0; // return 0; indica que o programa terminou com sucesso.
 
 }
